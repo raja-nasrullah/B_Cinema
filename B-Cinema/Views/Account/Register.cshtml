@@ -1,0 +1,46 @@
+﻿@model BookingCinema.Models.User
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div style="color:red">
+        @Html.ValidationSummary()
+    </div>
+}
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Name</label><br />
+        <input type="text" asp-for="Name" required />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Email</label><br />
+        <input type="email" asp-for="Email" required />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Password</label><br />
+        <input type="password" asp-for="Password" required />
+    </div>
+
+    <br />
+
+    <button type="submit">Register</button>
+</form>
+
+<br />
+
+<p>
+    Already have an account?
+    <a asp-controller="Account" asp-action="Login">Login here</a>
+</p>

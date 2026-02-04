@@ -1,0 +1,59 @@
+﻿@model BookingCinema.Models.Ticket
+
+@{
+    ViewData["Title"] = "Create New Ticket";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="fas fa-plus-circle"></i> Issue New Ticket</h4>
+                </div>
+                <div class="card-body bg-dark text-white">
+                    <form asp-action="AddTicket" method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Assign to Customer</label>
+                            <select asp-for="UserId" class="form-select bg-secondary text-white border-0" required>
+                                <option value="">-- Select User --</option>
+                                @foreach (var user in ViewBag.Users)
+                                {
+                                    <option value="@user.Id">@user.Name (@user.Email)</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Select Movie</label>
+                            <select asp-for="MovieId" class="form-select bg-secondary text-white border-0" required>
+                                <option value="">-- Select Movie --</option>
+                                @foreach (var movie in ViewBag.Movies)
+                                {
+                                    <option value="@movie.Id">@movie.Title</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Select Showtime</label>
+                            <select asp-for="ShowtimeId" class="form-select bg-secondary text-white border-0" required>
+                                <option value="">-- Select Date & Time --</option>
+                                @foreach (var show in ViewBag.Showtimes)
+                                {
+                                    <option value="@show.Id">@show.Movie?.Title | @show.MovieDate.ToShortDateString() @@ @show.MovieTime</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-success fw-bold">Generate Ticket</button>
+                            <a asp-action="AllTickets" class="btn btn-outline-light">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

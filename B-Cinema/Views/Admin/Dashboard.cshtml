@@ -1,0 +1,250 @@
+﻿@model B_Cinema.Models.DashboardViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Admin Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar-custom {
+            background: linear-gradient(90deg, #1a1a1a, #e50914);
+            padding: 15px 20px;
+            width: 100%;
+            margin: 0;
+            position: relative;
+        }
+
+            .navbar-custom .logo {
+                color: #fff;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .navbar-custom .nav-link {
+                color: #bbb;
+                font-weight: bold;
+                margin-left: 15px;
+                padding: 8px 15px !important;
+            }
+
+                .navbar-custom .nav-link:hover,
+                .navbar-custom .nav-link.active {
+                    color: #ff4d4d;
+                    border-bottom: 2px solid #ff2c2c;
+                }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .main-content {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .carousel-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #dashboardCarousel {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #ff2c2c;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+            .stat-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(255, 44, 44, 0.3);
+            }
+
+            .stat-box i {
+                font-size: 45px;
+                margin-bottom: 15px;
+                color: #ff2c2c;
+            }
+
+            .stat-box h4 {
+                font-size: 20px;
+                color: white;
+                font-weight: bold;
+                margin: 0 0 10px 0;
+            }
+
+        .stat-number {
+            font-size: 28px;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 60px auto 20px;
+            color: #bbb;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+            footer a {
+                color: #ff4d4d;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand logo" href="#"><i class="fas fa-film"></i> CINEMA ADMIN</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bookings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tickets</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div id="dashboardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/images/slide1.jpg" class="d-block w-100" alt="Cinema Hall">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/slide2.jpg" class="d-block w-100" alt="Movie Poster">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/slide1.jpg" class="d-block w-100" alt="Cinema">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Dashboard Boxes -->
+        <div class="stats-grid">
+            <a href="@Url.Action("AllUsers", "Admin")" style="text-decoration: none; color: inherit;">
+                <div class="stat-box">
+                    <i class="fas fa-users"></i>
+                    <h4>Users</h4>
+                    <div class="stat-number">@Model.UserCount</div>
+                </div>
+            </a>
+
+            <a href="@Url.Action("AllBookings", "Admin")" style="text-decoration: none; color: inherit;">
+                <div class="stat-box">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h4>Bookings</h4>
+                    <div class="stat-number">@Model.BookingCount</div>
+                </div>
+            </a>
+
+            <a href="@Url.Action("AllMovies", "Admin")" style="text-decoration: none; color: inherit;">
+                <div class="stat-box">
+                    <i class="fas fa-video"></i>
+                    <h4>Movies</h4>
+                    <div class="stat-number">@Model.MovieCount</div>
+                </div>
+            </a>
+
+            <a href="@Url.Action("AllTickets", "Admin")" style="text-decoration: none; color: inherit;">
+                <div class="stat-box">
+                    <i class="fas fa-ticket"></i>
+                    <h4>Tickets</h4>
+                    <div class="stat-number">@Model.TicketCount</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cinema Admin. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@model BookingCinema.Models.Movie
+@{
+    ViewData["Title"] = "Add Movie";
+}
+
+<h2 class="text-white mb-4">Add Movie</h2>
+
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<form asp-action="AddMovie" method="post" enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea asp-for="Description" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Duration (minutes)</label>
+        <input asp-for="Duration" type="number" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input asp-for="Price" type="number" step="0.01" class="form-control" required />
+    </div>
+
+    <!-- ✅ NEW: Movie Poster Upload -->
+    <div class="mb-3">
+        <label class="form-label">Movie Poster</label>
+        <input type="file" name="MovieImage" class="form-control" accept="image/*" />
+        <small class="text-muted">Upload jpg / png image</small>
+    </div>
+
+    <button type="submit" class="btn btn-success">Add Movie</button>
+    <a asp-action="Dashboard" class="btn btn-secondary ms-2">Back to Dashboard</a>
+
+</form>

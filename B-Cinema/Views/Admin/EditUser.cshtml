@@ -1,0 +1,44 @@
+﻿@model BookingCinema.Models.User
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div style="background-color:#8B0000; min-height:100vh; padding:30px;">
+
+    <h2 class="text-white mb-4">Edit User</h2>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <form asp-action="EditUser" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label class="form-label text-white">Name</label>
+            <input asp-for="Name" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-white">Email</label>
+            <input asp-for="Email" type="email" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-white">Password</label>
+            <input asp-for="Password" type="password" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-white">Role</label>
+            <select asp-for="Role" class="form-control" required>
+                <option value="">Select Role</option>
+                <option value="Admin" selected="@((Model.Role == "Admin") ? "selected" : null)">Admin</option>
+                <option value="Customer" selected="@((Model.Role == "Customer") ? "selected" : null)">Customer</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update User</button>
+        <a asp-action="AllUsers" class="btn btn-secondary ms-2">Back to Users</a>
+    </form>
+
+</div>

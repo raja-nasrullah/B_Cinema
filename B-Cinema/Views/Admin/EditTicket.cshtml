@@ -1,0 +1,64 @@
+﻿@model BookingCinema.Models.Ticket
+
+@{
+    ViewData["Title"] = "Edit Ticket";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-warning text-dark">
+                    <h3 class="mb-0"><i class="fas fa-edit"></i> Edit Ticket: @Model.TicketNumber</h3>
+                </div>
+                <div class="card-body bg-dark text-white">
+                    <form asp-action="EditTicket" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="IssuedAt" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Ticket Number</label>
+                            <input asp-for="TicketNumber" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="TicketNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Assign to User</label>
+                            <select asp-for="UserId" class="form-select bg-secondary text-white border-0">
+                                @foreach (var user in ViewBag.Users)
+                                {
+                                    <option value="@user.Id">@user.Name (@user.Email)</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Movie</label>
+                            <select asp-for="MovieId" class="form-select bg-secondary text-white border-0">
+                                @foreach (var movie in ViewBag.Movies)
+                                {
+                                    <option value="@movie.Id">@movie.Title</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Showtime</label>
+                            <select asp-for="ShowtimeId" class="form-select bg-secondary text-white border-0">
+                                @foreach (var show in ViewBag.Showtimes)
+                                {
+                                    <option value="@show.Id">@show.MovieDate.ToShortDateString() - @show.MovieTime.ToString(@"hh\:mm")</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-warning fw-bold">Update Ticket</button>
+                            <a asp-action="AllTickets" class="btn btn-outline-light">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

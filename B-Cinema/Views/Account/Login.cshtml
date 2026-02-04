@@ -1,0 +1,87 @@
+﻿@model BookingCinema.Models.User
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background:
+            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('/images/cinema.png') no-repeat center center/cover;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-card {
+        border: none;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .login-card h3 {
+        font-weight: bold;
+        color: #dc3545;
+    }
+
+    .form-control {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btn-primary {
+        border-radius: 10px;
+        font-weight: bold;
+        background: #dc3545;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background: #b02a37;
+    }
+
+    a {
+        color: #dc3545;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-4">
+            <div class="card login-card">
+                <div class="card-body p-4">
+
+                    <h3 class="text-center mb-4">🎬 Cinema Login</h3>
+
+                    <form asp-action="Login" method="post">
+
+                        <div class="form-group mb-3">
+                            <label>Email</label>
+                            <input asp-for="Email" class="form-control" placeholder="Enter email" />
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>Password</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Login
+                        </button>
+
+                        <div class="text-center mt-3">
+                            <a asp-action="Register">Create new account</a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
