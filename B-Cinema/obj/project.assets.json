@@ -5305,11 +5305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj",
+      "projectUniqueName": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
       "projectName": "B-Cinema",
-      "projectPath": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj",
+      "projectPath": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\obj\\",
+      "outputPath": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
