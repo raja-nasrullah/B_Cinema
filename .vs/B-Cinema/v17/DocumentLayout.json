@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|e:\\git projects\\bookingcinema\\b_cinema\\b-cinema\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "B-Cinema\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "B-Cinema\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-04T17:06:37.543Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
