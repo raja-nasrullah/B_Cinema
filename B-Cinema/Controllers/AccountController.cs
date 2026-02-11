@@ -1,8 +1,6 @@
 ﻿using BookingCinema.Data;
 using BookingCinema.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -26,6 +24,7 @@ namespace BookingCinema.Controllers
         [HttpPost]
         public IActionResult Register(User model)
         {
+            //else {what if model state is nt valid (throw exception)
             if (ModelState.IsValid)
             {
                 if (_context.Users.Any(u => u.Email == model.Email))

@@ -9,16 +9,16 @@ namespace BookingCinema.Models
         public int Id { get; set; }
 
         [Required]
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         [Required, EmailAddress]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         [Required]
-        public string? Password { get; set; }
+        public string Password { get; set; }
 
         [Required]
-        public string? Role { get; set; } // "Admin" or "User"
+        public string Role { get; set; } // "Admin" or "User"
 
         // Navigation Property
         public ICollection<Booking> Bookings { get; set; } = new List<Booking>();

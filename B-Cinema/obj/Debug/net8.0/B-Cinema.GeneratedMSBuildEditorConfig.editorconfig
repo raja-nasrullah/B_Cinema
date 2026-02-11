@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkTW92aWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/AddShowtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkU2hvd3RpbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/AddTicket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkVGlja2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/AllMovies.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsTW92aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/AllShowtimes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsU2hvd3RpbWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/AllTickets.cshtml]
@@ -64,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/EditMovie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdE1vdmllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/EditShowtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFNob3d0aW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/GIT Projects/BookingCinema/B_Cinema/B-Cinema/Views/Admin/EditTicket.cshtml]
