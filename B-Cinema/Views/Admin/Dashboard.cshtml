@@ -211,7 +211,14 @@
                     <div class="stat-number">@Model.UserCount</div>
                 </div>
             </a>
-
+            <div class="stats-grid">
+                <a href="@Url.Action("AllShowtimes", "Admin")" style="text-decoration: none; color: inherit;">
+                    <div class="stat-box">
+                        <i class="fas fa-users"></i>
+                        <h4>Users</h4>
+                        <div class="stat-number">@Model.UserCount</div>
+                    </div>
+                </a>
             <a href="@Url.Action("AllBookings", "Admin")" style="text-decoration: none; color: inherit;">
                 <div class="stat-box">
                     <i class="fas fa-ticket-alt"></i>

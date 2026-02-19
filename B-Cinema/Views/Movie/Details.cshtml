@@ -1,16 +1,77 @@
 ﻿@model BookingCinema.Models.Movie
 @{
-    ViewData["Title"] = "Movie Details";
+    ViewData["Title"] = Model.Title + " - Showtimes";
 }
 
-<h2>@Model.Title</h2>
+<style>
+    .showtime-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .showtime-card {
+        background: #2a2a2a;
+        border: 1px solid #e50914;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 150px;
+        transition: 0.3s;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+    .showtime-card:hover {
+        background: #e50914;
+        transform: scale(1.05);
+        color: white;
+    }
+    .showtime-date { font-size: 0.8rem; opacity: 0.8; }
+    .showtime-hour { font-size: 1.2rem; font-weight: bold; display: block; }
+</style>
 
-<div class="card">
-    <div class="card-body">
-        <p><strong>Description:</strong> @Model.Description</p>
-        <p><strong>Duration:</strong> @Model.Duration min</p>
-        <p><strong>Price:</strong> $@Model.Price</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@Model.ImagePath" class="img-fluid rounded shadow" alt="@Model.Title">
+        </div>
+
+        <div class="col-md-8">
+            <h1 class="display-5 fw-bold text-white">@Model.Title</h1>
+            <div class="d-flex gap-3 mb-3">
+                <span class="badge bg-danger">@Model.Duration min</span>
+                <span class="badge bg-success">$@Model.Price</span>
+            </div>
+
+            <p class="lead text-light">@Model.Description</p>
+
+            <hr class="border-secondary" />
+
+            <h4 class="text-white mt-4"><i class="far fa-calendar-alt me-2"></i>Select a Showtime</h4>
+
+            @if (Model.Showtimes != null && Model.Showtimes.Any())
+            {
+                <div class="showtime-container">
+                    @foreach (var slot in Model.Showtimes.OrderBy(s => s.MovieDate).ThenBy(s => s.MovieTime))
+                    {
+                        <a asp-controller="Booking" asp-action="BookNow" asp-route-showtimeId="@slot.Id" class="showtime-card">
+                            <span class="showtime-date">@slot.MovieDate.ToString("ddd, MMM dd")</span>
+                            <span class="showtime-hour">@slot.MovieTime.ToString(@"hh\:mm")</span>
+                        </a>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning mt-3">
+                    No showtimes currently scheduled for this movie. Check back later!
+                </div>
+            }
+
+            <div class="mt-5">
+                <a asp-action="Index" class="btn btn-outline-secondary">Back to Movies</a>
+            </div>
+        </div>
     </div>
 </div>
-
-<a asp-action="Index" class="btn btn-secondary mt-3">Back to Movies</a>

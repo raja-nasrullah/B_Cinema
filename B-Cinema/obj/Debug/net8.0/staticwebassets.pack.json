@@ -1,267 +1,267 @@
 {
   "Files": [
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\B-Cinema.bundle.scp.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\B-Cinema.bundle.scp.css",
       "PackagePath": "staticwebassets\\B-Cinema.bundle.scp.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\css\\site.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\favicon.ico",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\images\\2060dedf-6e8b-412e-bd27-1d3fef0c4629.png",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\images\\2060dedf-6e8b-412e-bd27-1d3fef0c4629.png",
       "PackagePath": "staticwebassets\\images\\2060dedf-6e8b-412e-bd27-1d3fef0c4629.png"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\images\\cinema.png",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\images\\cinema.png",
       "PackagePath": "staticwebassets\\images\\cinema.png"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\images\\slide1.jpg",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\images\\slide1.jpg",
       "PackagePath": "staticwebassets\\images\\slide1.jpg"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\images\\slide2.jpg",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\images\\slide2.jpg",
       "PackagePath": "staticwebassets\\images\\slide2.jpg"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\js\\site.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\wwwroot\\movie-posters\\844ca407-e0ed-4dc2-ba9b-fb7fa3c289a0.jfif",
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\movie-posters\\844ca407-e0ed-4dc2-ba9b-fb7fa3c289a0.jfif",
       "PackagePath": "staticwebassets\\movie-posters\\844ca407-e0ed-4dc2-ba9b-fb7fa3c289a0.jfif"
     },
     {

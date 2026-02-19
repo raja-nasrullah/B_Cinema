@@ -1,0 +1,56 @@
+﻿@model BookingCinema.Models.Showtime
+
+@{
+    ViewData["Title"] = "Edit Showtime";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-dark">
+            <h2 class="mb-0">Edit Showtime</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="EditShowtime" method="post">
+                @Html.AntiForgeryToken()
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="MovieId" class="form-label font-weight-bold">Movie</label>
+                    <select asp-for="MovieId" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Movies, "Id", "Title"))">
+                        <option value="">-- Select Movie --</option>
+                    </select>
+                    <span asp-validation-for="MovieId" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MovieDate" class="form-label font-weight-bold">Show Date</label>
+                        <input asp-for="MovieDate" type="date" class="form-control" />
+                        <span asp-validation-for="MovieDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MovieTime" class="form-label font-weight-bold">Show Time</label>
+                        <input asp-for="MovieTime" type="time" class="form-control" />
+                        <span asp-validation-for="MovieTime" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary px-4">Update Showtime</button>
+                    <a asp-action="AllShowtimes" class="btn btn-outline-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
