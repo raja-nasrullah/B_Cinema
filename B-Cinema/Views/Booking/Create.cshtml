@@ -1,0 +1,174 @@
+﻿@model BookingCinema.Models.Booking
+
+@{
+    ViewData["Title"] = "Book Your Ticket";
+}
+<style>
+    .seat-selected {
+        background-color: #dc3545 !important;
+        color: white !important;
+        font-weight: bold;
+    }
+
+    .seat-booked {
+        background-color: #6c757d !important;
+        color: white !important;
+        pointer-events: none;
+        opacity: 0.6;
+    }
+</style>
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow border-0">
+                <div class="card-header bg-danger text-white text-center py-3">
+                    <h4 class="mb-0">Confirm Your Selection</h4>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form asp-action="Create" method="post">
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Hidden Selected Seats -->
+                        <input type="hidden" asp-for="SelectedSeats" id="SelectedSeats" />
+
+                        <!-- Customer -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Customer</label>
+                            <input type="text" class="form-control" value="@ViewBag.UserName" readonly />
+                        </div>
+
+                        <!-- Showtime -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Select Showtime & Hall</label>
+
+                            <select asp-for="ShowtimeId"
+                                    class="form-select"
+                                    asp-items="ViewBag.ShowtimeId">
+                                <option value="">-- Choose Movie & Screen --</option>
+                            </select>
+
+                            <span asp-validation-for="ShowtimeId" class="text-danger"></span>
+                        </div>
+
+                        <!-- Seats -->
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold d-block">
+                                Select Seats
+                            </label>
+
+                            <div class="d-flex flex-wrap gap-2">
+
+                                @for (int i = 1; i <= 50; i++)
+                                {
+                                    var seat = "A" + i;
+
+                                    <button type="button"
+                                            id="@seat"
+                                            class="btn btn-outline-primary seat-btn m-1"
+                                            onclick="toggleSeat('@seat')">
+                                        @seat
+                                    </button>
+                                }
+
+                            </div>
+
+                        </div>
+
+                        <!-- Quantity (AUTO) -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Number of Seats</label>
+
+                            <input asp-for="Quantity"
+                                   class="form-control"
+                                   id="qtyInput"
+                                   readonly />
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-danger btn-lg">
+                                Confirm Booking
+                            </button>
+
+                            <a asp-action="Index"
+                                   asp-controller="Movie"
+                                   class="btn btn-link text-muted mt-2">
+                                Change Movie
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        let selectedSeats = [];
+
+        function toggleSeat(seat) {
+
+            let btn = document.getElementById(seat);
+
+            if (selectedSeats.includes(seat)) {
+
+                selectedSeats = selectedSeats.filter(s => s !== seat);
+                btn.classList.remove("seat-selected");
+
+            } else {
+
+                selectedSeats.push(seat);
+                btn.classList.add("seat-selected");
+            }
+
+            document.getElementById("SelectedSeats").value = selectedSeats.join(",");
+            document.getElementById("qtyInput").value = selectedSeats.length;
+        }
+
+        document.getElementById("showtimeSelect").addEventListener("change", function () {
+
+            let showtimeId = this.value;
+
+            if (!showtimeId) return;
+
+            fetch('/Booking/GetBookedSeats?showtimeId=' + showtimeId)
+                .then(res => res.json())
+                .then(data => {
+
+                    // reset all seats
+                    document.querySelectorAll(".seat-btn").forEach(btn => {
+                        btn.classList.remove("seat-booked");
+                        btn.classList.remove("seat-selected");
+                        btn.disabled = false;
+                    });
+
+                    selectedSeats = [];
+                    document.getElementById("SelectedSeats").value = "";
+                    document.getElementById("qtyInput").value = 0;
+
+                    // mark booked seats
+                    data.forEach(seat => {
+                        let btn = document.getElementById(seat);
+
+                        if (btn) {
+                            btn.classList.add("seat-booked");
+                            btn.disabled = true;
+                        }
+                    });
+                });
+        });
+    </script>
+}

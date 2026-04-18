@@ -25,6 +25,7 @@ namespace BookingCinema.Models
 
         [ForeignKey("ShowtimeId")]
         public Showtime? Showtime { get; set; }
+        public string SeatNumber { get; set; }
 
         // Additional ticket-specific info
         public string TicketNumber { get; set; } = Guid.NewGuid().ToString().Substring(0, 8).ToUpper();

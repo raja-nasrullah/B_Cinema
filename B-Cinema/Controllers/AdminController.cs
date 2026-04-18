@@ -36,6 +36,7 @@ namespace BookingCinema.Controllers
                 // Per instruction: ID 1 is not treated as a manageable user
                 UserCount = _context.Users.Count(u => u.Id != 1),
                 BookingCount = _context.Bookings.Count(),
+                ShowTimeCount = _context.Showtimes.Count(),
                 MovieCount = _context.Movies.Count(),
                 TicketCount = _context.Tickets.Count()
             };
@@ -381,62 +382,63 @@ namespace BookingCinema.Controllers
         [HttpGet]
         public IActionResult AddShowtime()
         {
-            if (!IsAdmin()) return RedirectToAction("Login", "Account");
-
-            // We need the list of movies for the dropdown
+            // Provide Movies for the first dropdown
             ViewBag.Movies = _context.Movies.ToList();
+
+            // Provide Halls to fix the Foreign Key error
+            ViewBag.Halls = _context.Halls.ToList();
+
             return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult AddShowtime(Showtime model)
         {
-            if (!IsAdmin()) return RedirectToAction("Login", "Account");
-
             if (ModelState.IsValid)
             {
                 _context.Showtimes.Add(model);
-                _context.SaveChanges();
+                _context.SaveChanges(); // This will no longer crash because HallId is now set
                 return RedirectToAction("AllShowtimes");
             }
 
+            // If validation fails, reload the lists so the dropdowns don't break
             ViewBag.Movies = _context.Movies.ToList();
+            ViewBag.Halls = _context.Halls.ToList();
             return View(model);
         }
 
         [HttpGet]
         public IActionResult EditShowtime(int id)
         {
-            if (!IsAdmin()) return RedirectToAction("Login", "Account");
-
             var showtime = _context.Showtimes.Find(id);
             if (showtime == null) return NotFound();
 
             ViewBag.Movies = _context.Movies.ToList();
+            ViewBag.Halls = _context.Halls.ToList(); // Add this!
+
             return View(showtime);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult EditShowtime(Showtime model)
         {
-            if (!IsAdmin()) return RedirectToAction("Login", "Account");
-
             if (ModelState.IsValid)
             {
-                var showtimeInDb = _context.Showtimes.Find(model.Id);
-                if (showtimeInDb == null) return NotFound();
+                var dbShowtime = _context.Showtimes.Find(model.Id);
+                if (dbShowtime != null)
+                {
+                    dbShowtime.MovieId = model.MovieId;
+                    dbShowtime.HallId = model.HallId; // <--- MAKE SURE THIS LINE EXISTS
+                    dbShowtime.MovieDate = model.MovieDate;
+                    dbShowtime.MovieTime = model.MovieTime;
 
-                showtimeInDb.MovieId = model.MovieId;
-                showtimeInDb.MovieDate = model.MovieDate;
-                showtimeInDb.MovieTime = model.MovieTime;
-
-                _context.SaveChanges();
-                return RedirectToAction("AllShowtimes");
+                    _context.SaveChanges();
+                    return RedirectToAction("AllShowtimes");
+                }
             }
-
+            // Re-populate ViewBags if it fails
             ViewBag.Movies = _context.Movies.ToList();
+            ViewBag.Halls = _context.Halls.ToList();
             return View(model);
         }
 

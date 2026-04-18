@@ -15,6 +15,7 @@
 
                 <input type="hidden" asp-for="Id" />
 
+                @* Movie Selection *@
                 <div class="form-group mb-3">
                     <label asp-for="MovieId" class="form-label font-weight-bold">Movie</label>
                     <select asp-for="MovieId" class="form-control"
@@ -22,6 +23,16 @@
                         <option value="">-- Select Movie --</option>
                     </select>
                     <span asp-validation-for="MovieId" class="text-danger"></span>
+                </div>
+
+                @* Hall Selection (ADDED THIS BLOCK) *@
+                <div class="form-group mb-3">
+                    <label asp-for="HallId" class="form-label font-weight-bold">Cinema Hall</label>
+                    <select asp-for="HallId" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Halls, "Id", "Name"))">
+                        <option value="">-- Select Hall --</option>
+                    </select>
+                    <span asp-validation-for="HallId" class="text-danger"></span>
                 </div>
 
                 <div class="row">

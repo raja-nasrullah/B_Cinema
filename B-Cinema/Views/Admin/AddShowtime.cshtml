@@ -12,6 +12,14 @@
     </div>
 
     <div class="form-group mt-3">
+        <label>Select Hall</label>
+        <select asp-for="HallId" class="form-control" asp-items="@(new SelectList(ViewBag.Halls, "Id", "Name"))">
+            <option value="">-- Select Hall --</option>
+        </select>
+        <span asp-validation-for="HallId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
         <label>Show Date</label>
         <input asp-for="MovieDate" type="date" class="form-control" />
         <span asp-validation-for="MovieDate" class="text-danger"></span>

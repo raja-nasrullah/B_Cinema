@@ -9,29 +9,73 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/B_Cinema.styles.css" asp-append-version="true" />
 </head>
+<style>
+    .navbar-custom {
+        background: linear-gradient(90deg, #1a1a1a, #e50914);
+        padding: 15px 20px;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+        .navbar-custom .logo {
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .navbar-custom .nav-link {
+            color: #bbb;
+            font-weight: bold;
+            margin-left: 15px;
+            padding: 8px 15px !important;
+        }
+
+            .navbar-custom .nav-link:hover,
+            .navbar-custom .nav-link.active {
+                color: #ff4d4d;
+                border-bottom: 2px solid #ff2c2c;
+            }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+</style>
 <body>
 
-    <header>
-        @*  <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom mb-3">
-             <div class="container">
-                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">B_Cinema</a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                 </button>
-                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                     <ul class="navbar-nav flex-grow-1">
-                         <li class="nav-item">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </nav>  *@
-    </header>
+<header>
+        @{
+            var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+            var action = ViewContext.RouteData.Values["action"]?.ToString();
+
+            bool hideNavbar = controller == "Account" && action == "Login";
+        }
+
+        @if (!hideNavbar)
+        {
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand logo" href="#"><i class="fas fa-film"></i> CINEMA ADMIN</a>
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("Dashboard", "Admin")">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("AllMovies", "Admin")">Movies</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("AllUSers", "Admin")">Users</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("AllBookings", "Admin")">Bookings</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("AllTickets", "Admin")">Tickets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        }
+</header>
+    
 
     <div class="content">
         <main role="main" class="pb-3">

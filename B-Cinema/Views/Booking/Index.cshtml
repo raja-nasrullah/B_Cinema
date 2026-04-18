@@ -1,0 +1,71 @@
+﻿@model IEnumerable<BookingCinema.Models.Booking>
+
+<div class="container-fluid pt-4">
+    <h2 class="mb-4 text-primary fw-bold">
+        <i class="fas fa-ticket-alt me-2"></i>Booking Ledger
+    </h2>
+
+    <div class="card shadow border-0">
+        <div class="card-body">
+            <table class="table table-hover align-middle">
+                <thead class="bg-light">
+                    <tr>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Movie</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BookingDate.ToString("MMM dd, HH:mm")</td>
+                            <td>@item.User?.Name</td>
+                            <td><strong>@item.Showtime?.Movie?.Title</strong></td>
+                            <td>@item.Quantity Tickets</td>
+                            <td class="text-danger fw-bold">$@item.TotalAmount</td>
+
+                            <td>
+                                @{
+                                    string badgeClass = item.Status switch
+                                    {
+                                        "Confirmed" => "bg-success",
+                                        "Pending" => "bg-warning",
+                                        "Cancelled" => "bg-danger",
+                                        _ => "bg-secondary"
+                                    };
+                                }
+
+                                <span class="badge @badgeClass">
+                                    @item.Status
+                                </span>
+                            </td>
+
+                            <td class="text-center">
+                                <a asp-action="Details"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-dark px-3">
+                                    View
+                                </a>
+
+                                @if (item.Status != "Cancelled")
+                                {
+                                    <a asp-action="Cancel"
+                                       asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-danger ms-1"
+                                       onclick="return confirm('Are you sure you want to cancel this booking?');">
+                                        Cancel
+                                    </a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -265,6 +265,10 @@
       "PackagePath": "staticwebassets\\movie-posters\\844ca407-e0ed-4dc2-ba9b-fb7fa3c289a0.jfif"
     },
     {
+      "Id": "E:\\GIT Projects\\BookingCinema\\B_Cinema\\B-Cinema\\wwwroot\\movie-posters\\94ce70e2-be1f-4360-8acd-5ed0fd9a3e46.jpg",
+      "PackagePath": "staticwebassets\\movie-posters\\94ce70e2-be1f-4360-8acd-5ed0fd9a3e46.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.B-Cinema.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
