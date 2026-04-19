@@ -42,8 +42,138 @@
     }
 </style>
 <body>
+    <header>
+        @using Microsoft.AspNetCore.Http
 
-<header>
+@{
+            var role = Context.Session.GetString("UserRole");
+
+            var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+            var action = ViewContext.RouteData.Values["action"]?.ToString();
+
+            bool hideNavbar = controller == "Account" && action == "Login";
+        }
+
+        @if (!hideNavbar)
+        {
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid px-0">
+
+                    <a class="navbar-brand logo" href="#">
+                        <i class="fas fa-film"></i>
+                        @(role == "Admin" ? "CINEMA ADMIN" : "B_CINEMA")
+                    </a>
+
+                    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+
+                            @* ✅ ADMIN NAVBAR *@
+                            @if (role == "Admin")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Dashboard", "Admin")">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("AllMovies", "Admin")">Movies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("AllUsers", "Admin")">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("AllBookings", "Admin")">Bookings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("AllTickets", "Admin")">Tickets</a>
+                                </li>
+                            }
+
+                            @* ✅ USER NAVBAR *@
+                            else if (role == "User")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Index", "Movie")">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Index", "Booking")">My Bookings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Create", "Booking")">Book Ticket</a>
+                                </li>
+                            }
+
+                            @* ✅ LOGOUT *@
+                            @if (role != null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="@Url.Action("Logout", "Account")">Logout</a>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        }
+    </header>
+
+@*     <header>
+        @using Microsoft.AspNetCore.Http
+
+@{
+            var role = Context.Session.GetString("UserRole");
+        }
+
+        <ul class="navbar-nav ms-auto">
+
+            @if (role == "Admin")
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Dashboard", "Admin")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AllMovies", "Admin")">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AllUsers", "Admin")">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AllBookings", "Admin")">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AllTickets", "Admin")">Tickets</a>
+                </li>
+            }
+            else if (role == "User")
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Booking")">My Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Create", "Booking")">Book Ticket</a>
+                </li>
+            }
+
+            @if (role != null)
+            {
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="@Url.Action("Logout", "Account")">Logout</a>
+                </li>
+            }
+
+        </ul>
+    </header> *@
+
+
+
+
+@* <header>
         @{
             var controller = ViewContext.RouteData.Values["controller"]?.ToString();
             var action = ViewContext.RouteData.Values["action"]?.ToString();
@@ -74,7 +204,7 @@
                 </nav>
             </header>
         }
-</header>
+</header> *@
     
 
     <div class="content">

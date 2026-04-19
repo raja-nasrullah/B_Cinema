@@ -456,6 +456,19 @@ namespace BookingCinema.Controllers
             }
             return RedirectToAction("AllShowtimes");
         }
+        // --- BOOKING MANAGEMENT ---
+        public IActionResult AllBookings()
+        {
+            if (!IsAdmin()) return RedirectToAction("Login", "Account");
+
+            var bookings = _context.Bookings
+                .Include(b => b.User)
+                .Include(b => b.Showtime)
+                    .ThenInclude(s => s.Movie)
+                .ToList();
+
+            return View(bookings);
+        }
 
     }
 }

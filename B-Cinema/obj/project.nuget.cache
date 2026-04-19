@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+FJcoiSPctM=",
+  "dgSpecHash": "ZvMaCiVH+k4=",
   "success": true,
-  "projectFilePath": "D:\\Nasr\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
+  "projectFilePath": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

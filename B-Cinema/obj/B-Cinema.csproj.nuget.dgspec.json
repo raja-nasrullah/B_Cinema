@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nasr\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {}
+    "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {}
   },
   "projects": {
-    "D:\\Nasr\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {
+    "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nasr\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
+        "projectUniqueName": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
         "projectName": "B-Cinema",
-        "projectPath": "D:\\Nasr\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
+        "projectPath": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Nasr\\B_Cinema\\B-Cinema\\obj\\",
+        "outputPath": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
