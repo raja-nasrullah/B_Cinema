@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\controllers\\hallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\controllers\\hallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|d:\\git_project\\booking cinema\\b_cinema\\b-cinema\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DB2E85-BE76-4D23-A71F-7122327AD5B3}|B-Cinema\\B-Cinema.csproj|solutionrelative:b-cinema\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Views\\Movie\\Details.cshtml",
-              "RelativeDocumentMoniker": "B-Cinema\\Views\\Movie\\Details.cshtml",
-              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Views\\Movie\\Details.cshtml",
-              "RelativeToolTip": "B-Cinema\\Views\\Movie\\Details.cshtml",
-              "ViewState": "AgIAAC4AAAAAZmZmZuYswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T19:02:13.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "B-Cinema\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "B-Cinema\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T19:01:59.512Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,10 +44,71 @@
               "RelativeDocumentMoniker": "B-Cinema\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "B-Cinema\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFcAAAAAZWZmZqYowGEAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T18:56:11.765Z",
+              "WhenOpened": "2026-07-06T20:31:42.027Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "B-Cinema\\Controllers\\MovieController.cs",
+              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "B-Cinema\\Controllers\\MovieController.cs",
+              "ViewState": "AgIAABIAAACQmZmZmTk0wBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T18:51:28.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "B-Cinema\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "B-Cinema\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T18:51:25.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HallsController.cs",
+              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\HallsController.cs",
+              "RelativeDocumentMoniker": "B-Cinema\\Controllers\\HallsController.cs",
+              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\HallsController.cs",
+              "RelativeToolTip": "B-Cinema\\Controllers\\HallsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T18:51:24.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "B-Cinema\\Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "B-Cinema\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T18:51:22.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "B-Cinema\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "B-Cinema\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T18:51:15.263Z"
             }
           ]
         }

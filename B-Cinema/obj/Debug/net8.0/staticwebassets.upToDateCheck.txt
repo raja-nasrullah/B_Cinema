@@ -4,6 +4,7 @@ wwwroot\images\2060dedf-6e8b-412e-bd27-1d3fef0c4629.png
 wwwroot\images\cinema.png
 wwwroot\images\slide1.jpg
 wwwroot\images\slide2.jpg
+wwwroot\images\weblogo2.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
