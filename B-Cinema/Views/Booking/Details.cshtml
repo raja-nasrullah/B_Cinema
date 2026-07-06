@@ -1,0 +1,41 @@
+﻿@model BookingCinema.Models.Booking
+
+<div class="container mt-5">
+    <div class="card mx-auto shadow-lg border-0" style="max-width: 450px; border-radius: 15px;">
+        <div class="card-header bg-danger text-white text-center py-4" style="border-radius: 15px 15px 0 0;">
+            <h2 class="mb-0">B-CINEMA TICKET</h2>
+            <p class="small mb-0">ORDER #@Model.Id</p>
+        </div>
+        <div class="card-body p-4">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold text-uppercase">@Model.Showtime?.Movie?.Title</h3>
+                <span class="badge bg-light text-dark border">@Model.Showtime?.Hall?.Name</span>
+            </div>
+
+            <div class="row text-center border-top border-bottom py-3 my-3">
+                <div class="col-6 border-end">
+                    <small class="text-muted d-block">DATE</small>
+                    <span class="fw-bold">@Model.Showtime?.MovieDate.ToShortDateString()</span>
+                </div>
+                <div class="col-6">
+                    <small class="text-muted d-block">TIME</small>
+                    <span class="fw-bold">@Model.Showtime?.MovieTime.ToString(@"hh\:mm")</span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="mb-0 text-muted">Customer: <strong>@Model.User?.Name</strong></p>
+                <p class="mb-0">Seats: <strong>@Model.Quantity</strong></p>
+            </div>
+
+            <div class="mt-4 p-3 bg-light rounded text-center">
+                <h2 class="text-danger fw-bold mb-0">$@Model.TotalAmount</h2>
+                <small class="text-muted">PAID FULL</small>
+            </div>
+        </div>
+        <div class="card-footer bg-white text-center pb-4 border-0">
+            <button onclick="window.print()" class="btn btn-outline-dark btn-sm me-2">Print Ticket</button>
+            
+        </div>
+    </div>
+</div>

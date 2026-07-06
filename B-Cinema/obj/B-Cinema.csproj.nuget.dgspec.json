@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj": {}
+    "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {}
   },
   "projects": {
-    "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj": {
+    "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj",
+        "projectUniqueName": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
         "projectName": "B-Cinema",
-        "projectPath": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\B-Cinema.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\BookingCinema\\B-Cinema\\B-Cinema\\obj\\",
+        "projectPath": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\B-Cinema.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "D:\\Git_Project\\Booking Cinema\\B_Cinema\\B-Cinema\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,11 +26,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -40,10 +44,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Session": {
@@ -84,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -102,6 +102,29 @@
                 background: #e50914;
                 color: white;
             }
+
+        /* --- NEW CODE ADDED BELOW --- */
+        .btn-book {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #e50914;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .btn-book:hover {
+                background: #b20710;
+                color: white;
+                box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
+            }
+        /* --- END OF NEW CSS --- */
     </style>
 </head>
 <body>
@@ -148,6 +171,10 @@
 
                                 <a asp-action="Details" asp-controller="Movie" asp-route-id="@movie.Id" class="btn btn-details">
                                     VIEW SHOWTIMES
+                                </a>
+
+                                <a asp-action="Create" asp-controller="Booking" asp-route-movieId="@movie.Id" class="btn btn-book">
+                                    <i class="fas fa-ticket-alt me-1"></i> BOOK NOW
                                 </a>
                             </div>
                         </div>

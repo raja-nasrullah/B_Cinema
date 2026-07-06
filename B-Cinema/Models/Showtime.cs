@@ -26,5 +26,12 @@ namespace BookingCinema.Models
 
         // Navigation property for Bookings
         public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+
+        [Required]
+        [Display(Name = "Cinema Hall")]
+        public int HallId { get; set; }
+
+        [ForeignKey("HallId")]
+        public Hall? Hall { get; set; }
     }
 }

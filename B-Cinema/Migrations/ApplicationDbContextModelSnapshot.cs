@@ -36,8 +36,22 @@ namespace B_Cinema.Migrations
                     b.Property<int?>("MovieId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SelectedSeats")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ShowtimeId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -51,6 +65,29 @@ namespace B_Cinema.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Bookings");
+                });
+
+            modelBuilder.Entity("BookingCinema.Models.Hall", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Halls");
                 });
 
             modelBuilder.Entity("BookingCinema.Models.Movie", b =>
@@ -90,6 +127,9 @@ namespace B_Cinema.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("HallId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("MovieDate")
                         .HasColumnType("datetime2");
 
@@ -100,6 +140,8 @@ namespace B_Cinema.Migrations
                         .HasColumnType("time");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HallId");
 
                     b.HasIndex("MovieId");
 
@@ -114,11 +156,18 @@ namespace B_Cinema.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("BookingId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("IssuedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SeatNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ShowtimeId")
                         .HasColumnType("int");
@@ -131,6 +180,8 @@ namespace B_Cinema.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BookingId");
 
                     b.HasIndex("MovieId");
 
@@ -195,17 +246,29 @@ namespace B_Cinema.Migrations
 
             modelBuilder.Entity("BookingCinema.Models.Showtime", b =>
                 {
+                    b.HasOne("BookingCinema.Models.Hall", "Hall")
+                        .WithMany("Showtimes")
+                        .HasForeignKey("HallId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BookingCinema.Models.Movie", "Movie")
                         .WithMany("Showtimes")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Hall");
+
                     b.Navigation("Movie");
                 });
 
             modelBuilder.Entity("BookingCinema.Models.Ticket", b =>
                 {
+                    b.HasOne("BookingCinema.Models.Booking", null)
+                        .WithMany("Tickets")
+                        .HasForeignKey("BookingId");
+
                     b.HasOne("BookingCinema.Models.Movie", "Movie")
                         .WithMany()
                         .HasForeignKey("MovieId")
@@ -229,6 +292,16 @@ namespace B_Cinema.Migrations
                     b.Navigation("Showtime");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BookingCinema.Models.Booking", b =>
+                {
+                    b.Navigation("Tickets");
+                });
+
+            modelBuilder.Entity("BookingCinema.Models.Hall", b =>
+                {
+                    b.Navigation("Showtimes");
                 });
 
             modelBuilder.Entity("BookingCinema.Models.Movie", b =>

@@ -1,0 +1,35 @@
+﻿@model BookingCinema.Models.Hall
+
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-dark text-white text-center py-3">
+                    <h4 class="mb-0">Create New Hall</h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Create">
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-bold"></label>
+                            <input asp-for="Name" class="form-control" placeholder="e.g. Gold Screen 1" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Capacity" class="form-label fw-bold"></label>
+                            <input asp-for="Capacity" class="form-control" type="number" />
+                            <span asp-validation-for="Capacity" class="text-danger"></span>
+                        </div>
+                        <div class="form-check form-switch mb-4">
+                            <input asp-for="IsAvailable" class="form-check-input" type="checkbox" checked />
+                            <label class="form-check-label fw-bold">Active for Shows</label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger">Register Hall</button>
+                            <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

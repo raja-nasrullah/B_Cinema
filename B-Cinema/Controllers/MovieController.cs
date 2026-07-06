@@ -3,6 +3,7 @@ using BookingCinema.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookingCinema.Controllers
 {
@@ -28,12 +29,12 @@ namespace BookingCinema.Controllers
         // GET: /Movie/Details/5
         public IActionResult Details(int id)
         {
-            if (!IsLoggedIn())
-                return RedirectToAction("Login", "Account");
+            // .Include(m => m.Showtimes) is key here to load the related times!
+            var movie = _context.Movies
+                .Include(m => m.Showtimes)
+                .FirstOrDefault(m => m.Id == id);
 
-            var movie = _context.Movies.FirstOrDefault(m => m.Id == id);
-            if (movie == null)
-                return NotFound();
+            if (movie == null) return NotFound();
 
             return View(movie);
         }
@@ -42,5 +43,6 @@ namespace BookingCinema.Controllers
         {
             return HttpContext.Session.GetInt32("UserId") != null;
         }
+
     }
 }
